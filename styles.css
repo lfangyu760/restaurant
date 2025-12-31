@@ -77,3 +77,17 @@ body{background:var(--bg);color:#222;line-height:1.5}
 .modal-close{position:absolute;right:12px;top:12px;border:none;background:none;font-size:1.1rem;cursor:pointer}
 .modal-content img{width:100%;height:300px;object-fit:cover;border-radius:8px;margin-bottom:.75rem}
 .modal-content h3{margin-bottom:.5rem}
+
+/* Sushi gallery */
+.gallery{padding:2rem 0}
+.gallery h2{margin-bottom:.5rem}
+.sushi-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:0.75rem;margin-top:1rem}
+.sushi-grid img{width:100%;height:140px;object-fit:cover;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,.06);transition:transform .18s ease,box-shadow .18s ease}
+.sushi-grid img:hover{transform:translateY(-6px) scale(1.02);box-shadow:0 12px 32px rgba(0,0,0,.12)}
+
+@media (max-width:980px){
+  .sushi-grid{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:640px){
+  .sushi-grid{grid-template-columns:repeat(2,1fr)}
+}
